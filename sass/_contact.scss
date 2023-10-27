@@ -1,0 +1,40 @@
+.contact {
+  max-width: 90rem;
+  margin: 0 auto;
+  .center {
+    margin: 10rem 0rem;
+    display: grid;
+    gap: 6rem;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  &__input-box {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+  &__input,
+  &__textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.5rem;
+    border: 1px solid $border-color;
+    font-family: inherit;
+    color: $color-text-2;
+    font-size: 1.6rem;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

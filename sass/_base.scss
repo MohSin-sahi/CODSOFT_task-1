@@ -1,0 +1,66 @@
+// COLOR VARIABLES
+
+$color-primary: #007bff;
+$color-white: #fff;
+
+$color-text: #6c757d;
+$color-text-1: #020202;
+$color-text-2: #495057;
+$color-text-3: #0bceaf;
+
+$background-color: #e9ecef;
+$background-color-1: #dc3545;
+$background-color-2: #ffc107;
+$background-color-3: #343a40;
+$background-color-4: #17a2b8;
+$background-color-5: #1c5ce6;
+$background-color-6: #457efa;
+
+$border-color: #ced4da;
+$border-color-1: #dee2e6;
+
+// FONT VARIABLES
+$font-primary: "Roboto", sans-serif;
+
+//responsive
+$bp-large: 75em;
+$bp-mediam: 56.25em;
+$bp-small: 37.5em;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+  @media only screen and (max-width: $bp-mediam) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-text;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.main {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 6rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 3rem;
+  }
+}

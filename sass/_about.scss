@@ -1,0 +1,67 @@
+.about {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+
+  &__col-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 3rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-mediam) {
+      grid-template-columns: 1fr;
+      grid-gap: 4rem;
+    }
+  }
+  &__col-2-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  &__para-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-mediam) {
+      gap: 3rem;
+    }
+  }
+  &__para {
+    font-size: 1.6rem;
+    color: $color-text-1;
+  }
+  &__text-secondary {
+    color: $color-text;
+  }
+  &__btn-box {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      background-color: $background-color-5;
+      border: 2px solid $background-color-5;
+      color: $color-white;
+    }
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+  }
+}
