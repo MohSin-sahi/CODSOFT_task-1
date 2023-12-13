@@ -38,7 +38,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 
   @media only screen and (max-width: $bp-large) {
     font-size: 56.25%;
@@ -63,4 +63,12 @@ body {
   @media only screen and (max-width: $bp-small) {
     padding: 0 3rem;
   }
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }

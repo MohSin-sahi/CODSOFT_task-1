@@ -8,8 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth; }
+  overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -31,6 +30,13 @@ body {
   @media only screen and (max-width: 37.5em) {
     .main {
       padding: 0 3rem; } }
+
+.section {
+  transition: transform 1s, opacity 1s; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
 
 .heading-1 {
   font-size: 7rem;
@@ -136,12 +142,14 @@ body {
   justify-content: start;
   grid-gap: 2rem;
   background-color: #fff;
-  padding: 1rem 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0rem 0.2rem 0.7rem rgba(0, 0, 0, 0.2); }
+  padding: 1rem 3rem; }
+  .navbar.sticky {
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 0rem 0.2rem 0.7rem rgba(0, 0, 0, 0.2);
+    background-color: #fffffff2; }
   .navbar__logo:link, .navbar__logo:visited {
     font-size: 4rem;
     text-decoration: none;
@@ -264,7 +272,6 @@ body {
 .header {
   background-color: #007bff;
   height: 100vh;
-  margin-top: 6rem;
   padding: 0 6rem;
   display: grid;
   align-items: center; }
@@ -392,7 +399,8 @@ body {
     height: 6.4rem;
     padding: 1.5rem;
     background-color: #007bff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    fill: #fff; }
   .service__detail {
     color: #020202;
     font-size: 1.6rem; }

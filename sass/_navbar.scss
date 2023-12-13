@@ -6,12 +6,15 @@
   grid-gap: 2rem;
   background-color: $color-white;
   padding: 1rem 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0rem 0.2rem 0.7rem rgba(#000, 0.2);
 
+  &.sticky {
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 0rem 0.2rem 0.7rem rgba(#000, 0.2);
+    background-color: #fffffff2;
+  }
   &__logo {
     &:link,
     &:visited {
