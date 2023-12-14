@@ -309,7 +309,7 @@ body {
       letter-spacing: 1px;
       color: #fff; }
     .header__animated-text h3:nth-child(1) {
-      animation: text-move 6s infinite; }
+      animation: text-move 5s infinite; }
   .header__text-box {
     display: flex;
     flex-direction: column;
