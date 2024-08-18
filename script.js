@@ -29,6 +29,8 @@ footLinks.forEach((link) => {
   });
 });
 ////sticky navbar
+const navHeight = navbar.getBoundingClientRect().height;
+console.log(navHeight, navbar.getBoundingClientRect());
 const navObserver = new IntersectionObserver(
   function (entries, navObserver) {
     const [entry] = entries;
@@ -39,7 +41,7 @@ const navObserver = new IntersectionObserver(
       navbar.classList.remove("sticky");
     }
   },
-  { root: null, threshold: 0, rootMargin: "-90px" }
+  { root: null, threshold: 0, rootMargin: `-${navHeight}px` }
 );
 navObserver.observe(header);
 
